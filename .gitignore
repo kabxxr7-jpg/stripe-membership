@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/
+.DS_Store
+coverage/
+LEDGER.md
+portfolio/entry.md

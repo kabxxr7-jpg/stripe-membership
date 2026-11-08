@@ -1,0 +1,25 @@
+{
+  "name": "stripe-membership",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Membership and creator payout platform on Stripe test mode: Checkout subscriptions, Customer Portal, Connect Express, 80/20 destination charges, signed webhooks that grant and revoke access.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/main.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "setup:stripe": "node scripts/setup-stripe.ts",
+    "seed": "node scripts/seed.ts"
+  },
+  "dependencies": {
+    "stripe": "^23.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
